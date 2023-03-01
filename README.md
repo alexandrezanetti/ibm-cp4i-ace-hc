@@ -2,3 +2,4 @@
 
 This git is part of  instructions available on https://w3.ibm.com/w3publisher/preparing-fyre-for-cloud-pak-cp4x/cp4x
 
+[IBM MQ Operator](ibm-mq/README.md)
