@@ -29,7 +29,7 @@ We have used this link to help us:
 
 #### 6. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 > PROJECT=cp4i<br>
-> CP4ICHANNEL=v?<br>
+> CP4ICHANNEL=v7.0<br>
 > #channel versions: https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release<br>
 > echo $PROJECT<br>
 > echo $CP4ICHANNEL
