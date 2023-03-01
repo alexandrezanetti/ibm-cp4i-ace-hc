@@ -31,8 +31,11 @@ We have used this link to help us:
 #### 6. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 > PROJECT=cp4i<br>
 > IBMENTITLEMENTKEY=???<br>
+> CHANNEL=v2.2<br>
+> #channel versions: https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release<br>
 > echo $PROJECT<br>
-> echo $IBMENTITLEMENTKEY
+> echo $IBMENTITLEMENTKEY<br>
+> echo $CHANNEL
 
 #### 7. Ajustar o arquivo com Projeto/EntitlementKey / Run the command below to adjust Project and EntitlementKey
 > cat /root/cp4i/ibm-mq-operator.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" >/root/cp4i/ibm-mq-operator_OK.yaml<br>
