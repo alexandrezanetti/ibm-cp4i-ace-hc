@@ -18,13 +18,13 @@ We have used this link to help us:
 > git clone https://github.com/alexandrezanetti/cp4i.git
 
 #### 4. Se tiver interesse, visualizar o conteúdo do Script / Look the content
-> cat /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-operator.yaml<br>
+> cat /root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator.yaml<br>
 > cat /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub.yaml<br>
 
 #### 5. Criar o novo arquivo/script que será ajustado / create a new script to be changed
-> touch /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-operator_OK.yaml<br>
+> touch /root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator_OK.yaml<br>
 > touch /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub_OK.yaml<br>
-> chmod 777 /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-operator_OK.yaml<br>
+> chmod 777 /root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator_OK.yaml<br>
 > chmod 777 /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub_OK.yaml
 
 #### 6. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
@@ -35,11 +35,11 @@ We have used this link to help us:
 > echo $CP4ICHANNEL
 
 #### 7. Ajustar o arquivo com Projeto/EntitlementKey / Run the command below to adjust Project and EntitlementKey
-> cat /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-operator.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" >/root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-operator_OK.yaml<br>
+> cat /root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" >/root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator_OK.yaml<br>
 > cat /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" | sed "s/{###PROVIDE_CHANNEL_OPERATOR_HERE###}/$CP4ICHANNEL/g" >//root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub_OK.yaml
 
 #### 8. Execute o script / And finally, run the script
-> oc apply -f /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-operator_OK.yaml<br>
+> oc apply -f /root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator_OK.yaml<br>
 > oc apply -f /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub_OK.yaml
 
 #### Informação complementar / Addicional information
