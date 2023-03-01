@@ -5,5 +5,5 @@ metadata:
 spec:
   channel: <current_channel>
   name: ibm-integration-platform-navigator
-  source: <catalog_source_name>
+  source: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
   sourceNamespace: openshift-marketplace
