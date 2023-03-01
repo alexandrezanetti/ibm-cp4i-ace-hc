@@ -6,4 +6,4 @@ spec:
   channel: {###PROVIDE_CHANNEL_OPERATOR_HERE###}
   name: ibm-integration-platform-navigator
   source: ibm-operator-catalog
-  sourceNamespace: openshift-operators
+  sourceNamespace: openshift-marketplace
