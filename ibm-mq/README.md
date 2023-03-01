@@ -1,4 +1,4 @@
-####Instalando Operador IBM MQ / Installing IBM MQ Operator
+# Instalando o Operador IBM MQ no cluster Openshift / Installing IBM MQ Operator on Openshift cluster
 
 We have used this link to help us: 
 - IBM MQ: https://www.ibm.com/docs/en/ibm-mq/9.3?topic=iumorho-installing-mq-operator-using-red-hat-openshift-cli
