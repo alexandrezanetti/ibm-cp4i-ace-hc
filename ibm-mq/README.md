@@ -6,8 +6,9 @@ We have used this link to help us:
 #### 1. Entrar no Bastion do cluster OCP através de terminal (SSH) / Open Bastion of OCP cluster using terminal SSH
 > Lembre-se que precisará das informações abaixo/ Note that you will use the informations below:<br>
 > - Bastion IP Publico / Bastion public IP<br>
-> - Entitlement Key /  Entitlement Key<br>
 > - Sua senha Root / Root Password<br>
+> - Project/Namespace / Project/Namespace<br>
+> - Versão/Channel do operador IBM MQ Operator/Namespace / Version/Channel of IBM MQ Operator
 
 #### 2. Instalar o GIT no bastion / Instal GIT on Bastion:
 > sudo dnf install -y git<br>
