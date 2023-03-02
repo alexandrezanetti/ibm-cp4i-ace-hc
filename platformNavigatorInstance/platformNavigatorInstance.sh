@@ -10,7 +10,7 @@ metadata:
   namespace: openshift-operators
 spec:
   license:
-    accept: false
+    accept: true
     license: L-RJON-CJR2RX
   storage:
     class: $STORAGECLASSFS
