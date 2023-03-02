@@ -26,33 +26,33 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 #### 3. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release)
 
-- IBM CP4i Platform Navigator
+IBM CP4i Platform Navigator
 ```
 export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
-- IBM Foundational Services
+IBM Foundational Services
 ```
 export PROJECT=cp4i ; export CHANNEL=v3.23 ; export OPERATOR=ibm-common-service-operator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
-- Aspera
+Aspera
 ```
 export PROJECT=cp4i ; export CHANNEL=v1.5 ; export OPERATOR=aspera-hsts-operator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
-- IBM MQ
-```
-export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OPERATOR=ibm-mq ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
-```
-- IBM API Connect
+IBM API Connect
 ```
 export PROJECT=cp4i ; export CHANNEL=v3.2 ; export OPERATOR=ibm-apiconnect ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
-- IBM App Connect
+IBM App Connect
 ```
 export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-appconnect ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
-- IBM Event Stream
+IBM Event Stream
 ```
 export PROJECT=cp4i ; export CHANNEL=v3.1 ; export OPERATOR=ibm-eventstreams ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+```
+IBM MQ
+```
+export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OPERATOR=ibm-mq ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 
 #### Informação complementar / Addicional information
