@@ -18,14 +18,14 @@ We have used this link to help us:
 > git clone https://github.com/alexandrezanetti/cp4i.git
 
 #### 4. Se tiver interesse, visualizar o conteúdo do Script / Look the content
-> cat /root/cp4i/ibm-mq-operator.yaml<br>
-> cat /root/cp4i/ibm-mq-sub.yaml
+> cat /root/cp4i/ibm-mq/ibm-mq-operator.yaml<br>
+> cat /root/cp4i/ibm-mq/ibm-mq-sub.yaml
 
 #### 5. Criar o novo arquivo/script que será ajustado / create a new script to be changed
-> touch /root/cp4i/ibm-mq-operator_OK.yaml<br>
-> touch /root/cp4i/ibm-mq-sub_OK.yaml<br>
-> chmod 777 /root/cp4i/ibm-mq-operator_OK.yaml<br>
-> chmod 777 /root/cp4i/ibm-mq-sub_OK.yaml
+> touch /root/cp4i/ibm-mq/ibm-mq-operator_OK.yaml<br>
+> touch /root/cp4i/ibm-mq/ibm-mq-sub_OK.yaml<br>
+> chmod 777 /root/cp4i/ibm-mq/ibm-mq-operator_OK.yaml<br>
+> chmod 777 /root/cp4i/ibm-mq/ibm-mq-sub_OK.yaml
 
 #### 6. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 > PROJECT=cp4i<br>
@@ -35,8 +35,8 @@ We have used this link to help us:
 > echo $MQCHANNEL
 
 #### 7. Ajustar o arquivo com Projeto/EntitlementKey / Run the command below to adjust Project and EntitlementKey
-> cat /root/cp4i/ibm-mq-operator.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" >/root/cp4i/ibm-mq-operator_OK.yaml<br>
-> cat /root/cp4i/ibm-mq-sub.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" | sed "s/{###PROVIDE_CHANNEL_OPERATOR_HERE###}/$MQCHANNEL/g" >/root/cp4i/ibm-mq-sub_OK.yaml
+> cat /root/cp4i/ibm-mq/ibm-mq-operator.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" >/root/cp4i/ibm-mq-operator_OK.yaml<br>
+> cat /root/cp4i/ibm-mq/ibm-mq-sub.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" | sed "s/{###PROVIDE_CHANNEL_OPERATOR_HERE###}/$MQCHANNEL/g" >/root/cp4i/ibm-mq-sub_OK.yaml
 
 #### 8. Execute o script / And finally, run the script
 > oc apply -f /root/cp4i/ibm-mq-operator_OK.yaml<br>
