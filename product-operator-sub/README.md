@@ -28,37 +28,31 @@ Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integ
 
 - IBM CP4i Platform Navigator
 ```
-export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator
+export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 - IBM Foundational Services
 ```
-export PROJECT=cp4i ; export CHANNEL=v3.23 ; export OPERATOR=ibm-common-service-operator
+export PROJECT=cp4i ; export CHANNEL=v3.23 ; export OPERATOR=ibm-common-service-operator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 - Aspera
 ```
-export PROJECT=cp4i ; export CHANNEL=v1.5 ; export OPERATOR=aspera-hsts-operator
+export PROJECT=cp4i ; export CHANNEL=v1.5 ; export OPERATOR=aspera-hsts-operator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 - IBM MQ
 ```
-export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OPERATOR=ibm-mq
+export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OPERATOR=ibm-mq ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 - IBM API Connect
 ```
-export PROJECT=cp4i ; export CHANNEL=v3.2 ; export OPERATOR=ibm-apiconnect
+export PROJECT=cp4i ; export CHANNEL=v3.2 ; export OPERATOR=ibm-apiconnect ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 - IBM App Connect
 ```
-export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-appconnect
+export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-appconnect ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 - IBM Event Stream
 ```
-export PROJECT=cp4i ; export CHANNEL=v3.1 ; export OPERATOR=ibm-events-operator
-```
-
-#### 4. E finalmente, execute o script / And finally, run the script
-```
-chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh
-/root/cp4i/product-operator-sub/./zzzOperator.sh
+export PROJECT=cp4i ; export CHANNEL=v3.1 ; export OPERATOR=ibm-eventstreams ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 
 #### Informação complementar / Addicional information
