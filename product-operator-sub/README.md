@@ -32,7 +32,8 @@ We have used this link to help us:
 > echo $OPERATOR
 
 #### 5. E finalmente, execute o script / And finally, run the script
-/root/cp4i/product-operator-sub/./zzzOperator.sh
+> chmod 777 /root/cp4i/product-operator-sub/zzzOperator.sh<br>
+> /root/cp4i/product-operator-sub/./zzzOperator.sh
 
 #### Informação complementar / Addicional information
 - Como descobrir os operadores / How to discover the operators:
