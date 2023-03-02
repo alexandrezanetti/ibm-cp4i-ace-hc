@@ -28,9 +28,7 @@ Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integ
 |Operator|Commands|
 |:---------------|:----------:|
 |[IBM CP4i Platform Navigator]|ibm-integration-platform-navigator|
-|[Aspera]|export PROJECT=cp4i<br>
-export CHANNEL=v2.2<br>
-export OPERATOR=aspera-hsts-operator|
+|[Aspera]|``` export PROJECT=cp4i | export CHANNEL=v2.2 | export OPERATOR=aspera-hsts-operator ```|
 |[IBM MQ]|ibm-mq|
 |[IBM API Connect]|ibm-apiconnect|
 |[IBM App Connect]|ibm-appconnect|
