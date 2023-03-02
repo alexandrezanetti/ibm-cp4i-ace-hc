@@ -1,9 +1,4 @@
 # Instalando os Operadores no cluster Openshift / Installing Operators on Openshift cluster
-- Aspera HSTS
-- IBM Api Connect (APIC)
-- IBM App Connect (ACE)
-- IBM Event Stream 
-- IBM MQ
 
 We have used this link to help us: 
 - Products: https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=operators-installing-using-openshift-console
@@ -23,9 +18,15 @@ dnf install -y git
 git clone https://github.com/alexandrezanetti/cp4i.git
 ```
 
-#### 3. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
+#### 3. Execute as linhas abaixo para instalar toda a lista de produtos do CP4I  / Run lines below to install all CP4I products
 Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release)
-
+- IBM CP4i Platform Navigator 
+- IBM Foundational Services
+- Aspera HSTS
+- IBM Api Connect (APIC)
+- IBM App Connect (ACE)
+- IBM Event Stream 
+- IBM MQ
 
 ```
 echo "##### IBM CP4i Platform Navigator ####"; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
