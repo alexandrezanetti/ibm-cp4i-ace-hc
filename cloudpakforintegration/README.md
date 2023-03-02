@@ -36,7 +36,7 @@ We have used this link to help us:
 
 #### 7. Ajustar o arquivo com Projeto/EntitlementKey / Run the command below to adjust Project and EntitlementKey
 > cat /root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" >/root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator_OK.yaml<br>
-> cat /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" | sed "s/{###PROVIDE_CHANNEL_OPERATOR_HERE###}/$CP4ICHANNEL/g" >//root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub_OK.yaml
+> cat /root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" | sed "s/{###PROVIDE_CHANNEL_OPERATOR_HERE###}/$CP4ICHANNEL/g" >/root/cp4i/cloudpakforintegration/ibm-integration-platform-navigator-sub_OK.yaml
 
 #### 8. Execute o script / And finally, run the script
 > oc apply -f /root/cp4i/cloudpakforintegration/ibm-integration-operatorgroup-operator_OK.yaml<br>
