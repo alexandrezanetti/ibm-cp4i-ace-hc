@@ -20,8 +20,7 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 
 #### 3. Execute as linhas abaixo para instalar toda a lista de produtos do CP4I  / Run lines below to install all CP4I products
 Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release)
-- IBM CP4i Platform Navigator 
-- IBM Foundational Services
+- IBM CP4i Platform Navigator (com IBM Foundational Services)
 - Aspera HSTS
 - IBM Api Connect (APIC)
 - IBM App Connect (ACE)
@@ -30,7 +29,6 @@ Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integ
 
 ```
 echo "##### IBM CP4i Platform Navigator ####"; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
-echo "##### IBM Foundational Services"; export PROJECT=cp4i ; export CHANNEL=v3.23 ; export OPERATOR=ibm-common-service-operator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "###### Aspera ####" ; export PROJECT=cp4i ; export CHANNEL=v1.5 ; export OPERATOR=aspera-hsts-operator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM API Connect ####" ; export PROJECT=cp4i ; export CHANNEL=v3.2 ; export OPERATOR=ibm-apiconnect ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM App Connect ####" ; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-appconnect ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
