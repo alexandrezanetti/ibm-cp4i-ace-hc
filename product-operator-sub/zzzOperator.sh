@@ -5,7 +5,10 @@ echo $PROJECT
 echo $CHANNEL
 echo $OPERATOR
 echo $PROJECT
-echo $$PROJECTSUB
+echo $PROJECTSUB
+
+oc new-project $PROJECT
+oc project $PROJECT
 
 mkdir -p /tmp/$PROJECT/$OPERATOR
 chmod 777 /tmp/$PROJECT/$OPERATOR
