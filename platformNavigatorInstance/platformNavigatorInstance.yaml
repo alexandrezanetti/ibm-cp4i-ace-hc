@@ -4,7 +4,7 @@ metadata:
   name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-platform-navigator-ui
   labels:
     app: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-platform-navigator-ui
-  namespace: openshift-operators
+  namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
 spec:
   license:
     accept: true
