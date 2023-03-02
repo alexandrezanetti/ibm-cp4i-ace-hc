@@ -20,7 +20,9 @@ We have used this link to help us:
 > git --version
 
 #### 3. Baixar o script / Clone git with scripts
-> git clone https://github.com/alexandrezanetti/cp4i.git
+```
+git clone https://github.com/alexandrezanetti/cp4i.git
+```
 
 #### 4. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 > PROJECT=cp4i<br>
