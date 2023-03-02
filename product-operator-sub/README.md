@@ -36,6 +36,7 @@ echo "##### IBM Event Stream ####" ; export PROJECT=cp4i ; export CHANNEL=v3.1 ;
 echo "##### IBM MQ ####" ; export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OPERATOR=ibm-mq ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM CP4D (Data) ####"; ; export PROJECT=cp4d ; export CHANNEL=v3.6 ; export OPERATOR=cpd-platform-operator ;  export PROJECTSUB=openshift-operators ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM CP4S (Security) ####"; export PROJECT=cp4s ; export CHANNEL=v1.10 ; export OPERATOR=ibm-cp-security-operator ;  export PROJECTSUB=$PROJECT ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM CP4MCM (Multi Cloud for Management) ####"; export PROJECT=cp4mcm ; export CHANNEL=v2.3-stable ; export OPERATOR=ibm-management-orchestrator ;  export PROJECTSUB=$PROJECT ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 
 #### Informação complementar / Addicional information
