@@ -15,28 +15,24 @@ We have used this link to help us:
 > - Project/Namespace / Project/Namespace<br>
 > - Versão/Channel do operador IBM MQ Operator/Namespace / Version/Channel of IBM MQ Operator
 
-#### 2. Instalar o GIT no bastion / Instal GIT on Bastion:
+#### 2. Baixar o script / Clone git with scripts
 ```
-sudo dnf install -y git
+dnf install -y git
 git --version
-```
-
-#### 3. Baixar o script / Clone git with scripts
-```
 git clone https://github.com/alexandrezanetti/cp4i.git
 ```
 
-#### 4. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
+#### 3. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 ```
-PROJECT=cp4i
-CHANNEL=v2.2
-OPERATOR=ibm-mq
+export PROJECT=cp4i
+export CHANNEL=v2.2
+export OPERATOR=ibm-mq
 echo $PROJECT
 echo $CHANNEL
 echo $OPERATOR
 ```
 
-#### 5. E finalmente, execute o script / And finally, run the script
+#### 4. E finalmente, execute o script / And finally, run the script
 ```
 chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh
 /root/cp4i/product-operator-sub/./zzzOperator.sh
