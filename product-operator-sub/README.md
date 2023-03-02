@@ -25,31 +25,15 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 #### 3. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release)
 
-|Operator|Commands|
-|:---------------|:----------:|
-|[IBM CP4i Platform Navigator]|ibm-integration-platform-navigator|
-|[Aspera]|
 ```
-export PROJECT=cp4i | export CHANNEL=v2.2 | export OPERATOR=aspera-hsts-operator
+echo "IBM CP4i Platform Navigator" ;  export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator
+echo "IBM Foundational Services" ;  export PROJECT=cp4i ; export CHANNEL=v3.23 ; export OPERATOR=ibm-common-service-operator
+echo "Aspera" ;  export PROJECT=cp4i ; export CHANNEL=v1.5 ; export OPERATOR=aspera-hsts-operator
+echo "IBM MQ" ;  export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OPERATOR=ibm-mq
+echo "IBM API Connect" ;  export PROJECT=cp4i ; export CHANNEL=v3.2 ; export OPERATOR=ibm-apiconnect
+echo "IBM App Connect" ;  export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-appconnect
+echo "IBM Event Stream" ;  export PROJECT=cp4i ; export CHANNEL=v3.1 ; export OPERATOR=ibm-events-operator
 ```
-|
-|[IBM MQ]|ibm-mq|
-|[IBM API Connect]|ibm-apiconnect|
-|[IBM App Connect]|ibm-appconnect|
-|[IBM Event Stream]|ibm-events-operator|
-|[IBM Common Service]|ibm-common-service-operator|
-
-```
-export PROJECT=cp4i
-export CHANNEL=v2.2
-export OPERATOR=ibm-mq
-
-```
-|Operator|Commands|
-|:---------------|:----------:|
-|[username]|cp4ba-user|
-|[password]|password1|
-|${NAMESPACE}|cp4ba|
 
 #### 4. E finalmente, execute o script / And finally, run the script
 ```
