@@ -1,8 +1,0 @@
-apiVersion: operators.coreos.com/v1
-kind: OperatorGroup
-metadata:
-  name: ibm-mq
-  namespace: openshift-marketplace
-spec:
-  targetNamespaces:
-  - {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
