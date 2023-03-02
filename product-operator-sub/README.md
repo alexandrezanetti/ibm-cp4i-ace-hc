@@ -16,8 +16,10 @@ We have used this link to help us:
 > - Versão/Channel do operador IBM MQ Operator/Namespace / Version/Channel of IBM MQ Operator
 
 #### 2. Instalar o GIT no bastion / Instal GIT on Bastion:
-> sudo dnf install -y git<br>
-> git --version
+```
+sudo dnf install -y git
+git --version
+```
 
 #### 3. Baixar o script / Clone git with scripts
 ```
@@ -25,17 +27,20 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 ```
 
 #### 4. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
-> PROJECT=cp4i<br>
-> CHANNEL=v2.2<br>
-> OPERATOR=ibm-mq<br>
-> #channel versions: https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release<br>
-> echo $PROJECT<br>
-> echo $CHANNEL<br>
-> echo $OPERATOR
+```
+PROJECT=cp4i
+CHANNEL=v2.2
+OPERATOR=ibm-mq
+echo $PROJECT
+echo $CHANNEL
+echo $OPERATOR
+```
 
 #### 5. E finalmente, execute o script / And finally, run the script
-> chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh<br>
-> /root/cp4i/product-operator-sub/./zzzOperator.sh
+```
+chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh
+/root/cp4i/product-operator-sub/./zzzOperator.sh
+```
 
 #### Informação complementar / Addicional information
 - Como descobrir os operadores / How to discover the operators:
