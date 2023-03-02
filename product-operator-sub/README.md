@@ -18,7 +18,6 @@ We have used this link to help us:
 #### 2. Baixar o script / Clone git with scripts
 ```
 dnf install -y git
-git --version
 ```
 ```
 git clone https://github.com/alexandrezanetti/cp4i.git
