@@ -22,30 +22,16 @@ We have used this link to help us:
 #### 3. Baixar o script / Clone git with scripts
 > git clone https://github.com/alexandrezanetti/cp4i.git
 
-#### 4. Se tiver interesse, visualizar o conteúdo do Script / Look the content
-> cat /root/cp4i/ibm-eventstreams/ibm-eventstreams-operator.yaml<br>
-> cat /root/cp4i/ibm-eventstreams/ibm-eventstreams-sub.yaml
-
-#### 5. Criar o novo arquivo/script que será ajustado / create a new script to be changed
-> touch /root/cp4i/ibm-eventstreams/ibm-eventstreams-operator_OK.yaml<br>
-> touch /root/cp4i/ibm-eventstreams/ibm-eventstreams-sub_OK.yaml<br>
-> chmod 777 /root/cp4i/ibm-eventstreams/ibm-eventstreams-operator_OK.yaml<br>
-> chmod 777 /root/cp4i/ibm-eventstreams/ibm-eventstreams-sub_OK.yaml
-
-#### 6. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
+#### 4. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 > PROJECT=cp4i<br>
-> ESCHANNEL=v3.1<br>
+> CHANNEL=v2.2<br>
+> OPERATOR=ibm-mq<br>
 > #channel versions: https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release<br>
 > echo $PROJECT<br>
-> echo $ESCHANNEL
+> echo $CHANNEL
 
-#### 7. Ajustar o arquivo com Projeto/EntitlementKey / Run the command below to adjust Project and EntitlementKey
-> cat /root/cp4i/ibm-eventstreams/ibm-eventstreams-operator.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" >/root/cp4i/ibm-eventstreams/ibm-eventstreams-operator_OK.yaml<br>
-> cat /root/cp4i/ibm-eventstreams/ibm-eventstreams-sub.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/$PROJECT/g" | sed "s/{###PROVIDE_CHANNEL_OPERATOR_HERE###}/$ESCHANNEL/g" >/root/cp4i/ibm-eventstreams/ibm-eventstreams-sub_OK.yaml
-
-#### 8. Execute o script / And finally, run the script
-> oc apply -f /root/cp4i/ibm-eventstreams/ibm-eventstreams-operator_OK.yaml<br>
-> oc apply -f /root/cp4i/ibm-eventstreams/ibm-eventstreams-sub_OK.yaml
+#### 5. E finalmente, execute o script / And finally, run the script
+/root/cp4i/product-operator-sub/./zzzOperator.sh
 
 #### Informação complementar / Addicional information
 - Como descobrir os operadores / How to discover the operators:
