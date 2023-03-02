@@ -1,21 +1,11 @@
-PROJECT=cp4i
-STORAGECLASSFS=rook-cephfs
-cat <<EOF >> platformNavigatorInstance.yaml
-apiVersion: integration.ibm.com/v1beta1
-kind: PlatformNavigator
-metadata:
-  name: $PROJECT-platform-navigator-ui
-  labels:
-    app: $PROJECT-platform-navigator-ui
-  namespace: openshift-operators
-spec:
-  license:
-    accept: true
-    license: L-RJON-CJR2RX
-  storage:
-    class: $STORAGECLASSFS
-  mqDashboard: true
-  replicas: 1
-  version: 2022.4.1
-EOF
-oc apply -f platformNavigatorInstance.yaml
+#!/bin/bash
+
+echo $PROJECT
+echo $STORAGECLASSFS
+
+mkdir -p /tmp/$PROJECT/platformNavigatorInstance
+chmod 777 /tmp/$PROJECT/platformNavigatorInstance
+
+cat /root/platformNavigatorInstance/platformNavigatorInstance.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/${PROJECT}/g" | sed "s/{###PROVIDE_YOUR_STORAGECLASSFS_HERE###}/$STORAGECLASSFS/g"  | sed "s/{###PROVIDE_YOUR_OPERATOR_PRODUCT_CP4X_HERE###}/$OPERATOR/g" >/tmp/$PROJECT/platformNavigatorInstance/platformNavigatorInstance_OK.yaml
+ 
+oc apply -f /tmp/$PROJECT/platformNavigatorInstance/platformNavigatorInstance_OK.yaml
