@@ -24,18 +24,26 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 
 #### 3. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release)
--  Operador: ibm-integration-platform-navigator
--  Operador: ibm-common-service-operator
--  Operador: ibm-mq
--  Operador: aspera-hsts-operator
--  Operador: ibm-apiconnect"
--  Operador: ibm-appconnect"
--  Operador: ibm-events-operator"
+|[IBM CP4i Platform Navigator]|export PROJECT=cp4i<br>
+export CHANNEL=v2.2<br>
+export OPERATOR=ibm-integration-platform-navigator|
+|[IBM Common Service]|ibm-common-service-operator|
+|[IBM MQ]|ibm-mq|
+|[Aspera]|aspera-hsts-operator|
+|[IBM API Connect]|ibm-apiconnect|
+|[IBM App Connect]|ibm-appconnect|
+|[IBM Event Stream]|ibm-events-operator|
 ```
 export PROJECT=cp4i
 export CHANNEL=v2.2
 export OPERATOR=ibm-mq
+
 ```
+|Operator|Commands|
+|:---------------|:----------:|
+|[username]|cp4ba-user|
+|[password]|password1|
+|${NAMESPACE}|cp4ba|
 
 #### 4. E finalmente, execute o script / And finally, run the script
 ```
