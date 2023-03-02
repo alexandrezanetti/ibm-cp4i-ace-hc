@@ -25,6 +25,8 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 #### 3. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release)
 
+|Operator|Commands|
+|:---------------|:----------:|
 |[IBM CP4i Platform Navigator]|ibm-integration-platform-navigator|
 |[Aspera]|export PROJECT=cp4i<br>
 export CHANNEL=v2.2<br>
