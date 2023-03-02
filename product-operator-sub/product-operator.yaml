@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: {###PROVIDE_YOUR_OPERATOR_PRODUCT_CP4X_HERE###}
+  namespace: openshift-marketplace
+spec:
+  targetNamespaces:
+  - {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
