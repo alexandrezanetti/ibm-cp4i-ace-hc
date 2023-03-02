@@ -35,9 +35,6 @@ Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integ
 export PROJECT=cp4i
 export CHANNEL=v2.2
 export OPERATOR=ibm-mq
-echo $PROJECT
-echo $CHANNEL
-echo $OPERATOR
 ```
 
 #### 4. E finalmente, execute o script / And finally, run the script
