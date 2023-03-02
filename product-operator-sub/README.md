@@ -28,12 +28,14 @@ Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integ
 - IBM MQ
 
 ```
-echo "##### IBM CP4i Platform Navigator ####"; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
-echo "###### Aspera ####" ; export PROJECT=cp4i ; export CHANNEL=v1.5 ; export OPERATOR=aspera-hsts-operator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
-echo "##### IBM API Connect ####" ; export PROJECT=cp4i ; export CHANNEL=v3.2 ; export OPERATOR=ibm-apiconnect ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
-echo "##### IBM App Connect ####" ; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-appconnect ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
-echo "##### IBM Event Stream ####" ; export PROJECT=cp4i ; export CHANNEL=v3.1 ; export OPERATOR=ibm-eventstreams ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
-echo "##### IBM MQ ####" ; export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OPERATOR=ibm-mq ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM CP4I Platform Navigator ####"; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "###### Aspera ####" ; export PROJECT=cp4i ; export CHANNEL=v1.5 ; export OPERATOR=aspera-hsts-operator ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM API Connect ####" ; export PROJECT=cp4i ; export CHANNEL=v3.2 ; export OPERATOR=ibm-apiconnect ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM App Connect ####" ; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-appconnect ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM Event Stream ####" ; export PROJECT=cp4i ; export CHANNEL=v3.1 ; export OPERATOR=ibm-eventstreams ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM MQ ####" ; export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OPERATOR=ibm-mq ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM CP4D (Data) ####"; ; export PROJECT=cp4d ; export CHANNEL=v3.6 ; export OPERATOR=cpd-platform-operator ;  export PROJECTSUB=openshift-operators ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM CP4S (Security) ####"; export PROJECT=cp4s ; export CHANNEL=v1.10 ; export OPERATOR=ibm-cp-security-operator ;  export PROJECTSUB=$PROJECT ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 
 #### Informação complementar / Addicional information
