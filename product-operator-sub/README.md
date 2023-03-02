@@ -28,7 +28,8 @@ We have used this link to help us:
 > OPERATOR=ibm-mq<br>
 > #channel versions: https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release<br>
 > echo $PROJECT<br>
-> echo $CHANNEL
+> echo $CHANNEL<br>
+> echo $OPERATOR
 
 #### 5. E finalmente, execute o script / And finally, run the script
 /root/cp4i/product-operator-sub/./zzzOperator.sh
