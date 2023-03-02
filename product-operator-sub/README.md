@@ -32,7 +32,7 @@ We have used this link to help us:
 > echo $OPERATOR
 
 #### 5. E finalmente, execute o script / And finally, run the script
-> chmod 777 /root/cp4i/product-operator-sub/zzzOperator.sh<br>
+> chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh<br>
 > /root/cp4i/product-operator-sub/./zzzOperator.sh
 
 #### Informação complementar / Addicional information
