@@ -26,9 +26,14 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 #### 3. Muito importante: Setar estas variáveis / Must important! Define project name and set your IBM Entitlement Key
 Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=reference-operator-channel-versions-this-release)
 
+|Format|Grooviness|
+|-|-|
+|[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)|Medium|
+|[Markdown](https://daringfireball.net/projects/markdown/)|High|
+
 IBM CP4i Platform Navigator
 ```
-export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+export PROJECT=cp4i<br>export CHANNEL=v7.0<br>export OPERATOR=ibm-integration-platform-navigator<br>chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh<br>/root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 IBM Foundational Services
 ```
