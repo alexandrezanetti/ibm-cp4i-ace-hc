@@ -1,16 +1,16 @@
 apiVersion: integration.ibm.com/v1beta1
 kind: PlatformNavigator
 metadata:
-  name: $PROJECT-platform-navigator-ui
+  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-platform-navigator-ui
   labels:
-    app: $PROJECT-platform-navigator-ui
+    app: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-platform-navigator-ui
   namespace: openshift-operators
 spec:
   license:
     accept: true
     license: L-RJON-CJR2RX
   storage:
-    class: $STORAGECLASSFS
+    class: {###PROVIDE_YOUR_STORAGECLASSFS_HERE###}
   mqDashboard: true
   replicas: 1
   version: 2022.4.1
