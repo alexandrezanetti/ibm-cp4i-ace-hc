@@ -1,4 +1,4 @@
-# Criando uma instância do CP4I Platform Navigator no cluster Openshift / Create an instance of CP4I Platform Navigator on Openshift cluster
+# Criando uma instância do CP4I Platform Navigator no cluster Openshift / Creating an instance of CP4I Platform Navigator on Openshift cluster
 
 We have used this link to help us: 
 - Products: https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=operators-installing-using-openshift-console
