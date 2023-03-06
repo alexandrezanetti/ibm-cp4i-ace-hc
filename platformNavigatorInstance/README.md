@@ -23,5 +23,5 @@ Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integ
 - IBM CP4i Platform Navigator (com IBM Foundational Services)
 
 ```
-echo "##### IBM CP4i Platform Navigator ####"; export PROJECT=cp4i ; export STORAGECLASSFS=rook-cephfs ; chmod a+x /root/cp4i/platformNavigatorInstance/platformNavigatorInstance.sh ; /root/cp4i/platformNavigatorInstance//./platformNavigatorInstance.sh
+echo "##### IBM CP4i Platform Navigator ####"; export PROJECT=cp4i ; export STORAGECLASSFS=rook-cephfs ; chmod a+x /root/cp4i/platformNavigatorInstance/platformNavigatorInstance.sh ; /root/cp4i/platformNavigatorInstance/./platformNavigatorInstance.sh
 ```
