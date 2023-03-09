@@ -29,6 +29,8 @@ Obtenha o channel version [aqui](https://www.ibm.com/docs/en/cloud-paks/cp-integ
 
 ```
 echo "##### IBM CP4I Platform Navigator ####"; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-integration-platform-navigator ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM CP4BA ####"; export PROJECT=cp4ba ; export CHANNEL=v22.2 ; export OPERATOR=ibm-cp4a-operator ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+
 echo "###### Aspera ####" ; export PROJECT=cp4i ; export CHANNEL=v1.5 ; export OPERATOR=aspera-hsts-operator ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM API Connect ####" ; export PROJECT=cp4i ; export CHANNEL=v3.2 ; export OPERATOR=ibm-apiconnect ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM App Connect ####" ; export PROJECT=cp4i ; export CHANNEL=v7.0 ; export OPERATOR=ibm-appconnect ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
@@ -37,7 +39,6 @@ echo "##### IBM MQ ####" ; export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OP
 echo "##### IBM CP4D (Data) ####"; ; export PROJECT=cp4d ; export CHANNEL=v3.6 ; export OPERATOR=cpd-platform-operator ;  export PROJECTSUB=openshift-operators ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM CP4S (Security) ####"; export PROJECT=cp4s ; export CHANNEL=v1.10 ; export OPERATOR=ibm-cp-security-operator ;  export PROJECTSUB=$PROJECT ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM CP4MCM (Multi Cloud for Management) ####"; export PROJECT=cp4mcm ; export CHANNEL=v2.3-stable ; export OPERATOR=ibm-management-orchestrator ;  export PROJECTSUB=$PROJECT ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
-echo "##### IBM CP4BA ####"; export PROJECT=cp4ba ; export CHANNEL=v22.2 ; export OPERATOR=ibm-cp4a-operator ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 
 #### Informação complementar / Addicional information
