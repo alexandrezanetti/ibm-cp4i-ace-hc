@@ -37,6 +37,7 @@ echo "##### IBM MQ ####" ; export PROJECT=cp4i ; export CHANNEL=v2.2 ; export OP
 echo "##### IBM CP4D (Data) ####"; ; export PROJECT=cp4d ; export CHANNEL=v3.6 ; export OPERATOR=cpd-platform-operator ;  export PROJECTSUB=openshift-operators ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM CP4S (Security) ####"; export PROJECT=cp4s ; export CHANNEL=v1.10 ; export OPERATOR=ibm-cp-security-operator ;  export PROJECTSUB=$PROJECT ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 echo "##### IBM CP4MCM (Multi Cloud for Management) ####"; export PROJECT=cp4mcm ; export CHANNEL=v2.3-stable ; export OPERATOR=ibm-management-orchestrator ;  export PROJECTSUB=$PROJECT ;  chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
+echo "##### IBM CP4BA ####"; export PROJECT=cp4ba ; export CHANNEL=v22.2 ; export OPERATOR=ibm-cp4a-operator ; export PROJECTSUB=openshift-operators ; chmod a+x /root/cp4i/product-operator-sub/zzzOperator.sh ; /root/cp4i/product-operator-sub/./zzzOperator.sh
 ```
 
 #### Informação complementar / Addicional information
@@ -47,4 +48,5 @@ echo "##### IBM CP4MCM (Multi Cloud for Management) ####"; export PROJECT=cp4mcm
 > oc get packagemanifests --all-namespaces | grep "IBM Operator Catalog " | grep "aspera-hsts-operator"<br>
 > oc get packagemanifests --all-namespaces | grep "IBM Operator Catalog " | grep "ibm-apiconnect"<br>
 > oc get packagemanifests --all-namespaces | grep "IBM Operator Catalog " | grep "ibm-appconnect"<br>
-> oc get packagemanifests --all-namespaces | grep "IBM Operator Catalog " | grep "ibm-events-operator"
+> oc get packagemanifests --all-namespaces | grep "IBM Operator Catalog " | grep "ibm-events-operator"<br>
+> oc get packagemanifests --all-namespaces | grep "IBM Operator Catalog " | grep "ibm-cp4a-operator"
