@@ -11,7 +11,7 @@ We have used this link to help us:
 > - Project/Namespace / Project/Namespace<br>
 > - Versão/Channel do operador IBM Aspera Operator/Namespace / Version/Channel of IBM Aspera Operator<br>
 > - Licença do Aspera / Aspera license
-> - Diretório do Aspera no Storage Class / Aspera Directory on Storage Class
+
 
 #### 2. Baixar o script / Clone git with scripts
 ```
@@ -24,7 +24,7 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 ```
 
 #### 4. E finalmente, execute o script / And finally, run the script
-Preencha os conteudos abaixo {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}, {###PROVIDE_YOUR_ASPERA_LICENCE_CP4X_HERE###},  {###PROVIDE_YOUR_ASPERA_DIRECTORY_HERE###} no comando abaixo:
+Preencha os conteudos abaixo {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###} e {###PROVIDE_YOUR_ASPERA_LICENCE_CP4X_HERE###} no comando abaixo:
 ```
-echo "##### IBM CP4I Aspera High-Speed Transfer Server ####"; export PROJECT=cp4i ; export STORAGECLASSFS=rook-cephfs ; export ASPERADIRECTORY=/data ; export ASPERALICENCE={###PROVIDE_YOUR_ASPERA_LICENCE_CP4X_HERE###} ; chmod a+x /root/cp4i/asperaHstsInstance/asperaHstsInstance.sh ; /root/cp4i/asperaHstsInstance/asperaHstsInstance.sh
+echo "##### IBM CP4I Aspera High-Speed Transfer Server ####"; export PROJECT=cp4i ; export STORAGECLASSFS=rook-cephfs ; export ASPERALICENCE={###PROVIDE_YOUR_ASPERA_LICENCE_CP4X_HERE###} ; chmod a+x /root/cp4i/asperaHstsInstance/asperaHstsInstance.sh ; /root/cp4i/asperaHstsInstance/asperaHstsInstance.sh
 ```
