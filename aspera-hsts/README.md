@@ -1,4 +1,4 @@
-# Criando uma instância do CP4I Aspera no cluster Openshift / Creating an instance of CP4I Platform Navigator on Openshift cluster
+# Criando uma instância do CP4I Aspera High-Speed Transfer Server no cluster Openshift / Creating an instance of CP4I Aspera High-Speed Transfer Server on Openshift cluster
 
 We have used this link to help us: 
 - Products: https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=operators-installing-using-openshift-console<br>
