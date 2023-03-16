@@ -16,7 +16,7 @@ spec:
     default:
       replicas: 1
   storages:
-    - claimName: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-aspera-hsts-transfer-pvc
+    - claimName: {###PROVIDE_YOUR_PROJECT_NAMESPACE_HERE###}-aspera-hsts-transfer-pvc
       class: {###PROVIDE_YOUR_STORAGECLASSFS_HERE###}
       deleteClaim: true
       mountPath:  /data
