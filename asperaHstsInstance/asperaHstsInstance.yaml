@@ -10,7 +10,7 @@ metadata:
 spec:
   license:
     accept: true
-    key: {###PROVIDE_YOUR_LICENCE_CP4X_HERE###}-aspera-hsts
+    key: {###PROVIDE_YOUR_ASPERA_LICENCE_CP4X_HERE###}
     use: AsperaNonProduction
   deployments:
     default:
@@ -19,7 +19,7 @@ spec:
     - claimName: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-aspera-hsts-transfer-pvc
       class: {###PROVIDE_YOUR_STORAGECLASSFS_HERE###}
       deleteClaim: true
-      mountPath:  {###PROVIDE_YOUR_DIRECTORYASPERA_HERE###}
+      mountPath:  {###PROVIDE_YOUR_ASPERA_DIRECTORY_HERE###}
       size: 20Gi
   redis:
     persistence:
