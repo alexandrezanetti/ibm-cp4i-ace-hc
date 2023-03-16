@@ -9,7 +9,8 @@ We have used this link to help us:
 > - Bastion IP Publico / Bastion public IP<br>
 > - Sua senha Root / Root Password<br>
 > - Project/Namespace / Project/Namespace<br>
-> - Versão/Channel do operador IBM MQ Operator/Namespace / Version/Channel of IBM MQ Operator
+> - Versão/Channel do operador IBM Aspera Operator/Namespace / Version/Channel of IBM Aspera Operator<br>
+> - Licença do Aspera / Aspera license
 
 #### 2. Baixar o script / Clone git with scripts
 ```
