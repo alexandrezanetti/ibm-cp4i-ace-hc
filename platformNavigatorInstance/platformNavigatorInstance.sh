@@ -17,6 +17,11 @@ oc get routes --all-namespaces | grep -i platform-navigator-ui > /tmp/url-consol
 export CP4IURLCON=https://$(awk '/ cp4i-platform-navigator-ui-pn-/ {print $3}' /tmp/url-console-cp4i.txt)
 export CP4IPNPASSWORD=$(oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_password|base64decode}}")
 export CP4IPNUSER=$(oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_username|base64decode}}")
-echo $CP4IURLCON
-echo $CP4IPNUSER
-echo $CP4IPNPASSWORD
+echo "##############################################"
+echo "##############################################"
+echo "Url do CP4I Platform Navigator: $CP4IURLCON"
+echo "Usuário Admin do CP4I: $CP4IPNUSER"
+echo "Senha do usuário Admin: $CP4IPNPASSWORD"
+echo "Ou você pode utilizar o Kubeadmin ou seu W3IntranetId"
+echo "##############################################"
+echo "##########################################
