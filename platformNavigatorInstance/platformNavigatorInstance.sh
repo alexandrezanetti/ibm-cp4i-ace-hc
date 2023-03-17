@@ -9,3 +9,14 @@ chmod 777 /tmp/$PROJECT/platformNavigatorInstance
 cat /root/cp4i/platformNavigatorInstance/platformNavigatorInstance.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/${PROJECT}/g" | sed "s/{###PROVIDE_YOUR_STORAGECLASSFS_HERE###}/$STORAGECLASSFS/g"  >/tmp/$PROJECT/platformNavigatorInstance/platformNavigatorInstance_OK.yaml
  
 oc apply -f /tmp/$PROJECT/platformNavigatorInstance/platformNavigatorInstance_OK.yaml
+
+oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_password|base64decode}}" > /tmp/$PROJECT/platformNavigatorInstance/bm-common-services-platform-auth-idp-credentials_OK.yaml
+
+
+oc get routes --all-namespaces | grep -i platform-navigator-ui > /tmp/url-console-cp4i.txt
+export CP4IURLCON=https://$(awk '/ cp4i-platform-navigator-ui-pn-/ {print $3}' /tmp/url-console-cp4i.txt)
+export CP4IPNPASSWORD=$(oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_password|base64decode}}")
+export CP4IPNUSER=$(oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_username|base64decode}}")
+echo $CP4IURLCON
+echo $CP4IPNUSER
+echo $CP4IPNPASSWORD
