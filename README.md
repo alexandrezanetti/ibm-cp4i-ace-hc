@@ -6,8 +6,9 @@ This git is part of  instructions available on https://w3.ibm.com/w3publisher/pr
 ![Maturity Level 3](Maturity_Level_3.png)
 
 ### 2. [Criando uma instância do CP4I-Platform Navigator](platformNavigatorInstance/README.md)<br>
-![Maturity Level 3](Maturity_Level_4.png)
+![Maturity Level 4](Maturity_Level_4.png)
 
-### 3. [Criando uma instância do CP4I-APIC ]
+### 3. Criando uma instância do CP4I-APIC 
 ### 3.1 [Criando uma instância do CP4I-APIC ](apiconnectInstance//README.md)<br>
 ### 3.2 [Criando uma instância do CP4I-Datapower](https://w3.ibm.com/w3publisher/data-power)<br>
+![Maturity Level 5](Maturity_Level_5.png)
