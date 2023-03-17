@@ -25,6 +25,6 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 #### 4. E finalmente, execute o script / And finally, run the script
 Preencha os conteudos abaixo {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}, {###PROVIDE_YOUR_APIC_LICENCE_CP4X_HERE###} e {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###} no comando abaixo:
 ```
-echo "##### IBM CP4I APIC Non-Production Small ####"; export PROJECT=cp4i ; export STORAGECLASSBLOCK=rook-ceph-block ; export APICLICENCE=L-GVEN-GFUPVE ; chmod a+x /root/cp4i/apiconnectInstance/apiconnectInstanceNonProdctionSmall.sh ; /root/cp4i/apiconnectInstance/apiconnectInstanceNonProdctionSmall.sh
+echo "##### IBM CP4I APIC Non-Production Small ####"; export PROJECT=cp4i ; export STORAGECLASSBLOCK=rook-ceph-block ; export APICLICENCE=L-GVEN-GFUPVE ; chmod a+x /root/cp4i/apiconnectInstance/apiconnectInstanceNonProductionSmall.sh ; /root/cp4i/apiconnectInstance/apiconnectInstanceNonProductionSmall.sh
 ```
  
