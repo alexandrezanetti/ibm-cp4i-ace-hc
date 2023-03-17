@@ -8,7 +8,7 @@ metadata:
   name: cpi4-apic-nonproduction-small
   #name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-apic-nonproduction-small
   namespace: cp4i
-  #namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-apic2
+  #namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
 spec:
   license:
     accept: true
