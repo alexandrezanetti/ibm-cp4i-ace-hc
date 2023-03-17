@@ -20,3 +20,22 @@ spec:
   version: 10.0.5.2-ifix1
   storageClassName: rook-ceph-block
   #storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
+  analytics:
+    storage:
+      shared:
+        volumeClaimTemplate:
+          storageClassName: rook-ceph-block
+          #storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
+          volumeSize: 20Gi
+  management:
+    databaseVolumeClaimTemplate:
+      volumeSize: 120Gi
+      storageClassName: rook-ceph-block
+      #storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
+  gateway:
+    tokenManagementService:
+      storage:
+        storageClassName: rook-ceph-block
+        #storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
+ 
+        volumeSize: 20Gi
