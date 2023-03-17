@@ -1,0 +1,26 @@
+apiVersion: datapower.ibm.com/v1beta3
+kind: DataPowerService
+metadata:
+  name: quickstart
+  namespace: cp4i
+spec:
+  license:
+    accept: true
+    license: L-RJON-CCAT5F
+    use: nonproduction
+  resources:
+    limits:
+      memory: 4Gi
+    requests:
+      cpu: 1
+      memory: 4Gi
+  users:
+    - accessLevel: privileged
+      name: admin
+      passwordSecret: cp4i-datapower-secret
+  storage:
+    - path: /data/dp
+      type: persistent
+      class: rook-cephfs
+  replicas: 1
+  version: 10.5-lts
