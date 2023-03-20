@@ -1,7 +1,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-start-configmap-mqsc
+  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-configmap-mqsc
   namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
 immutable: false
 data:
