@@ -19,7 +19,7 @@ spec:
           items:
             - MQSC
           name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-confimap-mqsc
-    name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-qmgr-start
+    name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}qmgrstart
     resources:
       limits:
         cpu: 500m
