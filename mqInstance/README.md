@@ -25,5 +25,5 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 #### 4. E finalmente, execute o script / And finally, run the script
 Preencha os conteudos abaixo {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}, {###PROVIDE_YOUR_MQ_LICENCE_CP4X_HERE###} e {###PROVIDE_YOUR_STORAGECLASSFS_HERE###} no comando abaixo:
 ```
-echo "##### IBM CP4I MQ Non-Production Start ####"; export PROJECT=cp4i ; STORAGECLASSFS=rook-cephfs ; export MQLICENCE=L-APIG-CAUEQC ; chmod a+x /root/cp4i/mqInstance/mqInstanceStart.sh ; /root/cp4i/mqInstance/mqInstanceStart.sh
+echo "##### IBM CP4I MQ Non-Production Start ####"; export PROJECT=cp4i ; STORAGECLASSFS=rook-cephfs ; export MQLICENCE=L-RJON-CJR2RX ; chmod a+x /root/cp4i/mqInstance/mqInstanceStart.sh ; /root/cp4i/mqInstance/mqInstanceStart.sh
 ```
