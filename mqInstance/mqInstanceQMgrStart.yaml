@@ -2,10 +2,7 @@ apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
   name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-qmgr-start
-  generation: 1
   namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
-  finalizers:
-    - finalizer.queuemanagers.mq.ibm.com
 spec:
   license:
     accept: true
