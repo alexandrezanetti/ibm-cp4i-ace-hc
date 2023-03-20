@@ -29,4 +29,4 @@ echo "Usuário Admin do CP4I: $CP4IPNUSER"
 echo "Senha do usuário Admin: $CP4IPNPASSWORD"
 echo "Ou você pode utilizar o Kubeadmin ou seu W3IntranetId"
 echo "##############################################"
-echo "##########################################
+echo "##########################################"
