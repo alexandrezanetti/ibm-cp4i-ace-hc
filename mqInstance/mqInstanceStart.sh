@@ -24,7 +24,7 @@ do
 		break
 	fi
 done
-oc get pod --all-namespaces | grep ""${PROJECT}-mq-qmgr-start-ibm-mq-0" > /tmp/url-console-mq.txt
+oc get pod --all-namespaces | grep "${PROJECT}-mq-qmgr-start-ibm-mq-0" > /tmp/url-console-mq.txt
 export MQURLCON=https://$(awk '/-mq-qmgr-"/ {print $3}' /tmp/url-console-mq.txt)
 export MQUSER=$(oc get secret "${PROJECT}-mq-secret" -n "${PROJECT}" -o go-template --template="{{.data.user|base64decode}}")
 export MQPASSWORD=$(oc get secret "${PROJECT}-mq-secret" -n "${PROJECT}" -o go-template --template="{{.data.password|base64decode}}")
