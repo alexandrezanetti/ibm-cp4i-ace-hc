@@ -15,7 +15,7 @@ spec:
       - configMap:
           items:
             - MQSC
-          name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-confimap-mqsc
+          name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-configmap-mqsc
     name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}qmgrstart
     resources:
       limits:
