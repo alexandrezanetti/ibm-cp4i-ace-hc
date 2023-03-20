@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-start
+  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-qmgr-start
   generation: 1
   namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
   finalizers:
@@ -9,7 +9,7 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-RJON-CJR2RX
+    license: {###PROVIDE_YOUR_MQ_LICENCE_HERE###}
     use: NonProduction
   queueManager:
     availability:
@@ -18,7 +18,7 @@ spec:
       - configMap:
           items:
             - MQSC
-          name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-start-confimap-mqsc
+          name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-confimap-mqsc
     name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-qmgr-start
     resources:
       limits:
