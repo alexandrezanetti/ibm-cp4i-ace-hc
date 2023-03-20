@@ -1,0 +1,48 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-start
+  generation: 1
+  namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
+  finalizers:
+    - finalizer.queuemanagers.mq.ibm.com
+spec:
+  license:
+    accept: true
+    license: L-RJON-CJR2RX
+    use: NonProduction
+  queueManager:
+    availability:
+      type: SingleInstance
+    mqsc:
+      - configMap:
+          items:
+            - MQSC
+          name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-mq-start-confimap-mqsc
+    name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-qmgr-start
+    resources:
+      limits:
+        cpu: 500m
+      requests:
+        cpu: 500m
+    storage:
+      defaultClass: {###PROVIDE_YOUR_STORAGECLASSFS_HERE###}
+      persistedData:
+        class: {###PROVIDE_YOUR_STORAGECLASSFS_HERE###}
+        deleteClaim: true
+        enabled: true
+        type: persistent-claim
+      queueManager:
+        class: {###PROVIDE_YOUR_STORAGECLASSFS_HERE###}
+        deleteClaim: true
+        type: persistent-claim
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUT
+              value: 'yes'
+          name: qmgr
+  version: 9.3.1.1-r1
+  web:
+    enabled: true
