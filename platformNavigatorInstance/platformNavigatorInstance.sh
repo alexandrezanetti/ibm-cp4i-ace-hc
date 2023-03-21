@@ -16,12 +16,19 @@ echo "Waiting 30 seconds"
 for i in {1..30}; do  echo "Loop time "$i;   sleep 1s; done
 
 echo "Waiting restart of all Nodes (Masters and Workers)"
-while (oc get routes --all-namespaces | grep -i platform-navigator-ui); do sleep 1 ; done
-
+while true
+do
+	oc get pod | grep "${PROJECT}-platform-navigator-ui" | grep Running
+	if [[ $? -eq 0 ]]
+	then
+		break
+	fi
+done
 oc get routes --all-namespaces | grep -i platform-navigator-ui > /tmp/url-console-cp4i.txt
 export CP4IURLCON=https://$(awk '/ cp4i-platform-navigator-ui-pn-/ {print $3}' /tmp/url-console-cp4i.txt)
 export CP4IPNPASSWORD=$(oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_password|base64decode}}")
 export CP4IPNUSER=$(oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_username|base64decode}}")
+clear
 echo "##############################################"
 echo "##############################################"
 echo "Url do CP4I Platform Navigator: $CP4IURLCON"
