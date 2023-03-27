@@ -4,6 +4,6 @@ metadata:
   name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-ace-configuration
   namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}  
 spec:
-  data: {###PROVIDE_YOUR_HASH_HERE###}  
+  data: {###PROVIDE_YOUR_HASH_HERE###}
   description: authentication {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-ace
   type: barauth 
