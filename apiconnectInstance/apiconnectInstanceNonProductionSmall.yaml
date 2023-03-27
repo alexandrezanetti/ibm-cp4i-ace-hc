@@ -5,37 +5,30 @@ metadata:
     app.kubernetes.io/instance: apiconnect
     app.kubernetes.io/managed-by: ibm-apiconnect
     app.kubernetes.io/name: apiconnect-small
-  name: cpi4-apic-nonproduction-small
-  #name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-apic-nonproduction-small
-  namespace: cp4i
-  #namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
+  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-apic-nonproduction-small
+  namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}
 spec:
   license:
     accept: true
-    license: L-GVEN-GFUPVE
-    #license: {###PROVIDE_YOUR_APIC_LICENCE_HERE###}
+    license: {###PROVIDE_YOUR_APIC_LICENCE_HERE###}
     metric: VIRTUAL_PROCESSOR_CORE
     use: nonproduction
   profile: n1xc7.m48
   version: 10.0.5.2-ifix1
-  storageClassName: rook-ceph-block
-  #storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
+  storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
   analytics:
     storage:
       shared:
         volumeClaimTemplate:
-          storageClassName: rook-ceph-block
-          #storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
+          storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
           volumeSize: 20Gi
   management:
     databaseVolumeClaimTemplate:
       volumeSize: 120Gi
-      storageClassName: rook-ceph-block
-      #storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
+      storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
   gateway:
     tokenManagementService:
       storage:
-        storageClassName: rook-ceph-block
-        #storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
+        storageClassName: {###PROVIDE_YOUR_STORAGECLASSBLOCK_HERE###}
  
         volumeSize: 20Gi
