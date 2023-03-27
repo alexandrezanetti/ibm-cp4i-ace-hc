@@ -24,7 +24,7 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 #### 4. E finalmente, execute o script / And finally, run the script
 Preencha os conteudos abaixo {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}, {###PROVIDE_YOUR_ACE_LICENCE_CP4X_HERE###} e {###PROVIDE_YOUR_STORAGECLASSFS_HERE###} no comando abaixo:
 ```
-echo "##### IBM CP4I ACE ####"; export PROJECT=cp4i ; export STORAGECLASSFS=rook-cephfs ; export ACELICENCE=L-KSBM-C37J2R ; chmod a+x /root/cp4i/aceInstance/aceInstance.sh ; /root/cp4i/aceInstance/./aceInstance.sh
+echo "##### IBM CP4I ACE ####"; export PROJECT=cp4i ; export STORAGECLASSFS=rook-cephfs ; export ACELICENCE=L-APEH-CJUCNR ; chmod a+x /root/cp4i/aceInstance/aceInstance.sh ; /root/cp4i/aceInstance/./aceInstance.sh
 ```
 
 ```
