@@ -1,7 +1,7 @@
 apiVersion: appconnect.ibm.com/v1beta1
 kind: Configuration
 metadata:
-  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-ace
+  name: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}-ace-configuration
   namespace: {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}  
 spec:
   data: {###PROVIDE_YOUR_HASH_HERE###}  
