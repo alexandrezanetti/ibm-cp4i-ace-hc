@@ -1,7 +1,7 @@
 #!/bin/bash
 export ACEUSERNAME=admin
 export ACEPASSWORD=admin
-export ACEHASH=$(echo "{\"authType\":\"BASIC_AUTH\",\"credentials\":{\"username\":\"${ACEUSERNAME}\",\"password\":\"${ACEPASSWORD}\"}}" | base64)
+export ACEHASH=$(echo '{"authType":"BASIC_AUTH","credentials":{"username":"'$ACEUSERNAME'","password":"'$ACEPASSWORD'"}}' | base64 | sed ':a;N;$!ba;s/\n//g')
 
 echo "ACEUSERNAME: ${ACEUSERNAME}"
 echo "ACEPASSWORD: ${ACEPASSWORD}"
