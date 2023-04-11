@@ -25,7 +25,7 @@ do
         then
                 break
         fi
-        sleep 60s
+        sleep 10s
         $i=$i+1
 done
 
