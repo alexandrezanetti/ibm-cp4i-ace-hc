@@ -20,6 +20,7 @@ do
         clear
         echo "Aguarde enquanto os recursos são criados... em geral 30/40min! - Loop $i"
 	echo "Pod: ${PROJECT}-platform-navigator-ui"
+	oc get event -n ${PROJECT} | grep "${PROJECT}-platform-navigator-ui"
 	oc get pod -n ${PROJECT} | grep "${PROJECT}-platform-navigator-ui" | grep Running
         if [[ $? -eq 0 ]]
         then
