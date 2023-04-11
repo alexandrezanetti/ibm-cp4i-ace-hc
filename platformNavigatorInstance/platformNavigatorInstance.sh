@@ -26,7 +26,7 @@ do
                 break
         fi
         sleep 10s
-        $i=$i+1
+        ((i=i+1))
 done
 
 oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_password|base64decode}}" > /tmp/$PROJECT/platformNavigatorInstance/bm-common-services-platform-auth-idp-credentials_OK.yaml
