@@ -10,8 +10,6 @@ cat /root/cp4i/platformNavigatorInstance/platformNavigatorInstance.yaml | sed "s
  
 oc apply -f /tmp/$PROJECT/platformNavigatorInstance/platformNavigatorInstance_OK.yaml
 
-oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_password|base64decode}}" > /tmp/$PROJECT/platformNavigatorInstance/bm-common-services-platform-auth-idp-credentials_OK.yaml
-
 echo "Waiting 30 seconds"
 for i in {1..30}; do  echo "Loop time "$i;   sleep 1s; done
 
@@ -30,6 +28,8 @@ do
         sleep 60s
         $i=$i+1
 done
+
+oc get secret platform-auth-idp-credentials -n ibm-common-services -o go-template --template="{{.data.admin_password|base64decode}}" > /tmp/$PROJECT/platformNavigatorInstance/bm-common-services-platform-auth-idp-credentials_OK.yaml
 
 oc get routes --all-namespaces | grep -i platform-navigator-ui > /tmp/url-console-cp4i.txt
 export CP4IURLCON=https://$(awk '/ cp4i-platform-navigator-ui-pn-/ {print $3}' /tmp/url-console-cp4i.txt)
