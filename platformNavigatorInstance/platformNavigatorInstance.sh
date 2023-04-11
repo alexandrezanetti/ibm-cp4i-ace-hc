@@ -18,6 +18,7 @@ for i in {1..30}; do  echo "Loop time "$i;   sleep 1s; done
 echo "Waiting restart of all Nodes (Masters and Workers)"
 while true
 do
+        echo "Aguarde enquanto os recursos são criados... em geral 30/40min!"
 	oc get pod | grep "${PROJECT}-platform-navigator-ui" | grep Running
 	if [[ $? -eq 0 ]]
 	then
