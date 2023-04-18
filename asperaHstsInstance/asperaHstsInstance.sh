@@ -2,7 +2,7 @@
 
 echo "Check your IBM Aspera License - https://www.ibm.com/cloud/aspera/license-key" 
 echo "ASPERALICENSE: ${ASPERALICENSE}"
-if [ ${ASPERALICENSE} = "{###PROVIDE_YOUR_ASPERA_LICENCE_CP4X_HERE###}" ]; then echo "Please provide your IBM Aspera License - Check https://www.ibm.com/cloud/aspera/license-key"; exit 999; fi
+if [ ${ASPERALICENSE} = "{###PROVIDE_YOUR_ASPERA_LICENSE_CP4X_HERE###}" ]; then echo "Please provide your IBM Aspera License - Check https://www.ibm.com/cloud/aspera/license-key"; exit 999; fi
 
 echo $PROJECT
 echo $STORAGECLASSFS
