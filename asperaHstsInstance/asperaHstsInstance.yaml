@@ -10,7 +10,7 @@ metadata:
 spec:
   license:
     accept: true
-    key: {###PROVIDE_YOUR_ASPERA_LICENCE_HERE###}
+    key: {###PROVIDE_YOUR_ASPERA_LICENSE_HERE###}
     use: AsperaNonProduction
   deployments:
     default:
