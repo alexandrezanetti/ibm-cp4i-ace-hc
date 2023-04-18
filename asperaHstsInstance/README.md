@@ -24,7 +24,7 @@ git clone https://github.com/alexandrezanetti/cp4i.git
 ```
 
 #### 4. E finalmente, execute o script / And finally, run the script
-Preencha os conteudos abaixo {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###} e {###PROVIDE_YOUR_ASPERA_LICENCE_CP4X_HERE###} no comando abaixo:
+Preencha os conteudos abaixo {###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###} e {###PROVIDE_YOUR_ASPERA_LICENSE_CP4X_HERE###} no comando abaixo:
 ```
-echo "##### IBM CP4I Aspera High-Speed Transfer Server ####"; export PROJECT=cp4i ; export STORAGECLASSFS=rook-cephfs ; export ASPERALICENCE={###PROVIDE_YOUR_ASPERA_LICENCE_CP4X_HERE###} ; chmod a+x /root/cp4i/asperaHstsInstance/asperaHstsInstance.sh ; /root/cp4i/asperaHstsInstance/asperaHstsInstance.sh
+echo "##### IBM CP4I Aspera High-Speed Transfer Server ####"; export PROJECT=cp4i ; export STORAGECLASSFS=rook-cephfs ; export ASPERALICENSE={###PROVIDE_YOUR_ASPERA_LICENSE_CP4X_HERE###} ; chmod a+x /root/cp4i/asperaHstsInstance/asperaHstsInstance.sh ; /root/cp4i/asperaHstsInstance/asperaHstsInstance.sh
 ```
