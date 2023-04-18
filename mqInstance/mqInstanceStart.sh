@@ -7,13 +7,13 @@ echo $MQLICENCE
 mkdir -p /tmp/$PROJECT/mqInstance
 chmod a+x /tmp/$PROJECT/mqInstance
 
-cat /root/cp4i/mqInstance/mqInstanceSecret.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/${PROJECT}/g" | sed "s/{###PROVIDE_YOUR_STORAGECLASSFS_HERE###}/$STORAGECLASSFS/g"  | sed "s/{###PROVIDE_YOUR_MQ_LICENCE_HERE###}/$MQLICENCE/g" > /tmp/$PROJECT/mqInstance/mqInstanceSecret_OK.yaml
+cat ~/cp4i/mqInstance/mqInstanceSecret.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/${PROJECT}/g" | sed "s/{###PROVIDE_YOUR_STORAGECLASSFS_HERE###}/$STORAGECLASSFS/g"  | sed "s/{###PROVIDE_YOUR_MQ_LICENCE_HERE###}/$MQLICENCE/g" > /tmp/$PROJECT/mqInstance/mqInstanceSecret_OK.yaml
 oc apply -f /tmp/$PROJECT/mqInstance/mqInstanceSecret_OK.yaml
 
-cat /root/cp4i/mqInstance/mqInstanceConfigMapMQSC.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/${PROJECT}/g" | sed "s/{###PROVIDE_YOUR_STORAGECLASSFS_HERE###}/$STORAGECLASSFS/g"  | sed "s/{###PROVIDE_YOUR_MQ_LICENCE_HERE###}/$MQLICENCE/g" > /tmp/$PROJECT/mqInstance/mqInstanceConfigMapMQSC_OK.yaml
+cat ~/cp4i/mqInstance/mqInstanceConfigMapMQSC.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/${PROJECT}/g" | sed "s/{###PROVIDE_YOUR_STORAGECLASSFS_HERE###}/$STORAGECLASSFS/g"  | sed "s/{###PROVIDE_YOUR_MQ_LICENCE_HERE###}/$MQLICENCE/g" > /tmp/$PROJECT/mqInstance/mqInstanceConfigMapMQSC_OK.yaml
 oc apply -f /tmp/$PROJECT/mqInstance/mqInstanceConfigMapMQSC_OK.yaml
 
-cat /root/cp4i/mqInstance/mqInstanceQMgrStart.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/${PROJECT}/g" | sed "s/{###PROVIDE_YOUR_STORAGECLASSFS_HERE###}/$STORAGECLASSFS/g"  | sed "s/{###PROVIDE_YOUR_MQ_LICENCE_HERE###}/$MQLICENCE/g" > /tmp/$PROJECT/mqInstance/mqInstanceQMgrStart_OK.yaml
+cat ~/cp4i/mqInstance/mqInstanceQMgrStart.yaml | sed "s/{###PROVIDE_YOUR_PROJECT_NAMESPACE_CP4X_HERE###}/${PROJECT}/g" | sed "s/{###PROVIDE_YOUR_STORAGECLASSFS_HERE###}/$STORAGECLASSFS/g"  | sed "s/{###PROVIDE_YOUR_MQ_LICENCE_HERE###}/$MQLICENCE/g" > /tmp/$PROJECT/mqInstance/mqInstanceQMgrStart_OK.yaml
 oc apply -f /tmp/$PROJECT/mqInstance/mqInstanceQMgrStart_OK.yaml
 
 while true
