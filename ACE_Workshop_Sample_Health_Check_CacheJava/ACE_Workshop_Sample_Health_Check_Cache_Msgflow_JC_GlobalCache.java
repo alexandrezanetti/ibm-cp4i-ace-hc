@@ -48,7 +48,7 @@ public class ACE_Workshop_Sample_Health_Check_Cache_Msgflow_JC_GlobalCache exten
 			String val = (String)myMap.get(keyzzz);
 			outJsonData.createElementAsLastChild(MbElement.TYPE_NAME_VALUE, "GlobalCacheDepois1-Chave", keyzzz);
 			outJsonData.createElementAsLastChild(MbElement.TYPE_NAME_VALUE, "GlobalCacheDepois1-Val", val);
-			Thread.sleep(8000);
+			//Thread.sleep(8000);
 			String val2;
 			try {
 				val2 = (String)myMap.get(keyzzz);						
