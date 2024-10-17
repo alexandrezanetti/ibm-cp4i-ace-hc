@@ -1,0 +1,35 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "restapi",
+    "version": "1.0.0",
+    "description": "restapi"
+  },
+  "servers": [
+    {
+      "url": "/healthcheck"
+    }
+  ],
+  "components": {
+    "schemas": {}
+  },
+  "paths": {
+    "/timeout": {
+      "parameters": [],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "success"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/xml": {
+              "example": "<DFDL> <IntegrationCICS> <CONTROL> <TRANSACTION> <TRANID>9300</TRANID> </TRANSACTION> <IDENTIFIER> <IDENTIFIER>12345678901234</IDENTIFIER> <!-- RENAVAM --> </IDENTIFIER> <SERVICE>05</SERVICE> </CONTROL> </IntegrationCICS> <ISO_PRODESP_INTERNAL xmlns=\"http://www.prodesp.sp.gov.br/dfdl/ISO8583-Prodesp-Internal\"> <CONTROL> <TRANSACTION> <TRANID>9310</TRANID> <!-- Modified TRANID --> </TRANSACTION> <RETURN_CODE>00</RETURN_CODE> <!-- Example return code from cache --> </CONTROL> <ISO8583_PRODESP> <MTI_Tranid>9310</MTI_Tranid> <!-- ISO 8583 Transaction ID --> <PrimaryBitmap> <Bits001to004>B</Bits001to004> <Bits037to040>A</Bits037to040> </PrimaryBitmap> <SecondaryBitmap> <Bits125to128>2</Bits125to128> </SecondaryBitmap> <FIELDS> <FIELD_003>some-value</FIELD_003> <FIELD_004>123456789012</FIELD_004> <FIELD_033>value-from-field-9300</FIELD_033> <FIELD_037>some-value</FIELD_037> <FIELD_039>99</FIELD_039> <FIELD_062>some-long-value</FIELD_062> <FIELD_063>optional-field-063</FIELD_063> <FIELD_100>value-from-field-9300</FIELD_100> <FIELD_127>000000000</FIELD_127> </FIELDS> </ISO8583_PRODESP> </ISO_PRODESP_INTERNAL> </DFDL>"
+            }
+          }
+        }
+      }
+    }
+  }
+}
