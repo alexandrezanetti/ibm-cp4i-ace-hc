@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:restapiDescriptor xmlns="http://com.ibm.etools.mft.descriptor.base" xmlns:ns2="http://com.ibm.etools.mft.descriptor.restapi" definitionType="openapi_3" definitionFile="openapi.json" implementation="gen/ACE_Workshop_Sample_Health_Check_Cache_Timeout.msgflow" https="false" definitionWithExtRef="false" faultFormat="JSON">
-    <ns2:operations>
-        <ns2:operation name="getTimeout1" implementation="getTimeout1.subflow"/>
-        <ns2:operation name="getTimeout2" implementation="getTimeout2.subflow"/>
-        <ns2:operation name="getTimeout3" implementation="getTimeout3.subflow"/>
-    </ns2:operations>
-    <ns2:errorHandlers/>
-</ns2:restapiDescriptor>
