@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "/health"
+      "url": "/healthcheck"
     }
   ],
   "components": {
